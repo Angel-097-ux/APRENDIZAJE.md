@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaaS Architect - Nivel 8</title>
+    <link rel="stylesheet" href="style-8.css">
+</head>
+<body class="app-layout">
+
+    <aside class="sidebar">
+        <div class="sidebar__header">
+            <h1 class="sidebar__title">PB<span>Factory</span></h1>
+        </div>
+        <nav class="sidebar__nav">
+            <a href="#" class="sidebar__link sidebar__link--active">📦 Inventario</a>
+            <a href="#" class="sidebar__link">📊 Reportes</a>
+            <a href="#" class="sidebar__link">👥 Clientes</a>
+        </nav>
+    </aside>
+
+    <main class="main-view">
+        <header class="header-app">
+            <input type="search" class="header-app__search" placeholder="Buscar orden de remito...">
+            <div class="header-app__actions">
+                <button class="btn btn--primary">+ Nueva Orden</button>
+            </div>
+        </header>
+
+        <section class="board">
+            <div class="board__column">
+                <h3 class="board__title">Pendiente <span>3</span></h3>
+                <div class="card">
+                    <div class="card__tag card__tag--urgente">Urgente</div>
+                    <p class="card__text">Corte de 500 bodies - Arroro MV</p>
+                    <div class="card__footer">📅 28 Mar</div>
+                </div>
+            </div>
+
+            <div class="board__column">
+                <h3 class="board__title">En Proceso <span>1</span></h3>
+                <div class="card">
+                    <div class="card__tag card__tag--proceso">En Taller</div>
+                    <p class="card__text">Remeras estampadas Per Bimbi</p>
+                    <div class="card__footer">📅 30 Mar</div>
+                </div>
+            </div>
+
+            <div class="board__column">
+                <h3 class="board__title">Finalizado <span>12</span></h3>
+                <div class="card">
+                    <div class="card__tag card__tag--exito">Listo</div>
+                    <p class="card__text">Pedido Mayorista Rosario</p>
+                    <div class="card__footer">✅ Completado</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

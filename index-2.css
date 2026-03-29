@@ -1,0 +1,166 @@
+/* Variables */
+:root {
+  --color-principal: #4CAF50;
+  --color-secundario: #2E7D32;
+  --color-bg: #f9f9f9;
+  --color-texto: #333;
+  --radio: 8px;
+}
+
+/* Reset */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--color-bg);
+  color: var(--color-texto);
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: var(--color-principal);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  z-index: 1000;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1em;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #ddd;
+}
+
+/* Hero con parallax */
+.hero {
+  height: 100vh;
+  background: url('fondo.jpg') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-content {
+  animation: fadeInUp 1.5s ease;
+}
+
+.boton {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 0.8em 1.2em;
+  background: white;
+  color: var(--color-principal);
+  border-radius: var(--radio);
+  text-decoration: none;
+  transition: transform 0.3s;
+}
+
+.boton:hover {
+  transform: scale(1.1) rotate(2deg);
+}
+
+/* Proyectos */
+.proyectos {
+  padding: 4em 2em;
+  text-align: center;
+}
+
+.grid-proyectos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5em;
+  margin-top: 2em;
+}
+
+.card {
+  background: white;
+  border-radius: var(--radio);
+  padding: 1.5em;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.card:hover {
+  transform: translateY(-10px) rotateY(10deg);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Contacto */
+.contacto {
+  padding: 3em 2em;
+  background: #eee;
+}
+
+form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-top: 10px;
+  text-align: left;
+}
+
+form input, form textarea, form button {
+  margin-top: 5px;
+  padding: 0.8em;
+  font-size: 1rem;
+}
+
+form button {
+  margin-top: 15px;
+  background: var(--color-principal);
+  color: white;
+  border: none;
+  border-radius: var(--radio);
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+form button:hover {
+  background: var(--color-secundario);
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  background: #ddd;
+  text-align: center;
+  padding: 1em;
+  margin-top: 20px;
+}
+
+/* Animaciones */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive avanzado */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+  .grid-proyectos {
+    grid-template-columns: 1fr;
+  }
+}
