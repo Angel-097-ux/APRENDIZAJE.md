@@ -66,3 +66,61 @@ Puedes explorar el código y el resultado final en los siguientes enlaces:
 
 ---
 > *Guía realizada bajo la supervisión del docente de Diseño Web.*
+# 📑 Plantilla de Seguimiento: Mi Ruta de Aprendizaje Web
+
+**Alumno:** Angel-097-ux  
+**Fecha de inicio:** 27/03/2026  
+
+Este documento sirve como bitácora de mi progreso desde nivel 0 hasta experto en Diseño Web Frontend.
+
+---
+
+## 🗺️ 1. Mi Hoja de Ruta (Roadmap)
+
+Lista de proyectos para dominar HTML y CSS:
+
+- [x] **Nivel Inicial:** Configuración de entorno y base HTML (`mi-proyecto-web`).
+- [x] **Nivel Intermedio:** Estructura de Catálogo y Pedidos (`PROYECTO-CATALOGO-C. AMOR`).
+- [x] **Nivel Avanzado:** Lógica y funcionalidades con JS (`NOTADEPEDIDO`).
+- [ ] **Nivel Experto:** Refactorización y Portfolio Profesional.
+
+---
+
+## 🧠 2. Conceptos Técnicos Aprendidos
+
+### 🔹 Maquetación y Estructura
+- [x] **Semántica HTML5:** Uso de etiquetas para que Google entienda mi web.
+- [x] **Formularios:** Captura de datos de pedidos y clientes.
+- [x] **Tablas de talles:** Organización visual de datos complejos.
+
+### 🔹 Estilos y Layouts (CSS)
+- [x] **CSS Grid:** Manejo de grillas de productos.
+- [x] **Modelo de Caja:** Control de márgenes, rellenos y bordes.
+- [x] **Layout para impresión:** Optimización de notas de pedido para PDF.
+
+### 🔹 Lógica y Funcionalidad
+- [x] **JavaScript Básico:** Manejo de lógica en `NOTADEPEDIDO`.
+
+---
+
+## 🎨 3. Mis Proyectos Personales (GitHub)
+
+Aquí están mis repositorios actuales:
+
+1. **[mi-proyecto-web](https://github.com/Angel-097-ux/mi-proyecto-web):** Mis primeras estructuras en HTML.
+2. **[PROYECTO-CATALOGO-C. AMOR](https://github.com/Angel-097-ux/PROYECTO-CATALOGO-C.-AMOR):** Maquetación de catálogo de productos.
+3. **[NOTADEPEDIDO](https://github.com/Angel-097-ux/NOTADEPEDIDO):** Sistema funcional de pedidos.
+4. **[APRENDIZAJE.md](https://github.com/Angel-097-ux/APRENDIZAJE.md):** Documentación técnica de mi proceso.
+
+---
+
+## 🛠️ 4. Comandos de Terminal que ya domino
+
+- `cd`: Para moverme entre mis proyectos de OneDrive.
+- `ls`: Para listar mis archivos.
+- `git status`: Para ver qué archivos cambié.
+- `git add .` + `git commit`: Para guardar mi progreso.
+- `git push origin main`: Para ver mis cuadritos verdes en GitHub.
+
+---
+> *Guía realizada bajo la supervisión del docente de Diseño Web.*
