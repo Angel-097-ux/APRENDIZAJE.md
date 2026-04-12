@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SaaS Architect - Nivel 8</title>
-    <link rel="stylesheet" href="style-8.css">
+    <title>PB Factory - Gestión</title>
+    <link rel="stylesheet" href="index-1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body class="app-layout">
 
@@ -16,40 +17,39 @@
             <a href="#" class="sidebar__link sidebar__link--active">📦 Inventario</a>
             <a href="#" class="sidebar__link">📊 Reportes</a>
             <a href="#" class="sidebar__link">👥 Clientes</a>
+            <a href="index.html" class="sidebar__title">PB<span>Factory</span></a>
         </nav>
     </aside>
 
     <main class="main-view">
         <header class="header-app">
-            <input type="search" class="header-app__search" placeholder="Buscar orden de remito...">
-            <div class="header-app__actions">
-                <button class="btn btn--primary">+ Nueva Orden</button>
-            </div>
+            <input type="text" class="header-app__search" placeholder="Buscar orden...">
+            <button class="btn btn--primary">+ Nueva Orden</button>
         </header>
 
         <section class="board">
             <div class="board__column">
-                <h3 class="board__title">Pendiente <span>3</span></h3>
+                <div class="column-header"><h3>Pendiente</h3><span class="badge">3</span></div>
                 <div class="card">
-                    <div class="card__tag card__tag--urgente">Urgente</div>
+                    <span class="card__tag card__tag--urgente">Urgente</span>
                     <p class="card__text">Corte de 500 bodies - Arroro MV</p>
                     <div class="card__footer">📅 28 Mar</div>
                 </div>
             </div>
 
             <div class="board__column">
-                <h3 class="board__title">En Proceso <span>1</span></h3>
+                <div class="column-header"><h3>En Proceso</h3><span class="badge">1</span></div>
                 <div class="card">
-                    <div class="card__tag card__tag--proceso">En Taller</div>
+                    <span class="card__tag card__tag--proceso">En Taller</span>
                     <p class="card__text">Remeras estampadas Per Bimbi</p>
                     <div class="card__footer">📅 30 Mar</div>
                 </div>
             </div>
 
             <div class="board__column">
-                <h3 class="board__title">Finalizado <span>12</span></h3>
+                <div class="column-header"><h3>Finalizado</h3><span class="badge badge--success">12</span></div>
                 <div class="card">
-                    <div class="card__tag card__tag--exito">Listo</div>
+                    <span class="card__tag card__tag--exito">Listo</span>
                     <p class="card__text">Pedido Mayorista Rosario</p>
                     <div class="card__footer">✅ Completado</div>
                 </div>

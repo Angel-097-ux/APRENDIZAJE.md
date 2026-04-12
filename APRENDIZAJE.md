@@ -82,7 +82,7 @@ Lista de proyectos para dominar HTML y CSS:
 - [x] **Nivel Inicial:** Configuración de entorno y base HTML (`mi-proyecto-web`).
 - [x] **Nivel Intermedio:** Estructura de Catálogo y Pedidos (`PROYECTO-CATALOGO-C. AMOR`).
 - [x] **Nivel Avanzado:** Lógica y funcionalidades con JS (`NOTADEPEDIDO`).
-- [ ] **Nivel Experto:** Refactorización y Portfolio Profesional.
+- [x] **Nivel Experto:** Refactorización y Portfolio Profesional.
 
 ---
 
@@ -124,3 +124,25 @@ Aquí están mis repositorios actuales:
 
 ---
 > *Guía realizada bajo la supervisión del docente de Diseño Web.*
+---
+
+## ⚡ 5. Avances en Refactorización y UI Pro (Abril 2026)
+
+En la última etapa del curso, me enfoqué en llevar la interfaz de usuario al siguiente nivel, aplicando técnicas de diseño de software real (SaaS):
+
+### 🔹 Layouts de Alta Complejidad
+- [x] **Mastering CSS Grid:** Implementación de estructuras de dos ejes para Dashboards, logrando un menú lateral fijo (`sidebar`) y un área de contenido flexible (`main-view`).
+- [x] **Tableros Kanban:** Organización de flujos de trabajo en 3 columnas horizontales (`grid-template-columns: repeat(3, 1fr)`) que optimizan la gestión de órdenes de producción.
+
+### 🔹 Estética y Experiencia de Usuario (UX)
+- [x] **Arquitectura de Colores de Estado:** Uso de paletas semánticas (Rojo/Urgente, Naranja/Proceso, Verde/Éxito) para reducir la carga cognitiva del usuario.
+- [x] **Glassmorphism:** Uso de `backdrop-filter: blur` en barras de navegación para crear efectos de profundidad modernos.
+- [x] **Microinteracciones:** Implementación de transiciones suaves (`cubic-bezier`) y efectos de elevación (`transform: translateY`) en tarjetas de proyectos para mejorar la interactividad.
+
+### 🔹 Metodología de Trabajo
+- [x] **Refactorización de Código:** Aprendí a limpiar y unificar archivos CSS dispersos (`index-1`, `index-2`) en una hoja de estilos optimizada y centralizada mediante variables `:root`.
+- [x] **Documentación Técnica:** Uso de este archivo `.md` para registrar no solo qué hice, sino el *porqué* técnico detrás de cada decisión de diseño.
+
+---
+
+> **Reflexión Final:** El mayor desafío fue pasar de ver el diseño como "colores y fotos" a entenderlo como una **estructura lógica y funcional**. La transición de maquetación simple a sistemas complejos de gestión (como el Kanban de PB Factory) me permitió entender el verdadero potencial de las herramientas de desarrollo profesional.

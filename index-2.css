@@ -1,166 +1,239 @@
-/* Variables */
+/* ============================================================
+   PORTFOLIO INTERACTIVO - REFORMADO Y OPTIMIZADO
+   ============================================================ */
+
 :root {
-  --color-principal: #4CAF50;
-  --color-secundario: #2E7D32;
-  --color-bg: #f9f9f9;
-  --color-texto: #333;
-  --radio: 8px;
+  --primary: #6366f1;         /* Índigo moderno */
+  --primary-hover: #4f46e5;
+  --bg-dark: #0f172a;         /* Fondo profundo (como tu Dashboard) */
+  --bg-surface: #1e293b;      /* Superficie de tarjetas */
+  --text-main: #f8fafc;       /* Texto principal */
+  --text-muted: #94a3b8;      /* Texto secundario */
+  --border: rgba(255, 255, 255, 0.05);
+  --radio: 12px;
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Reset */
-body {
+/* Reset Profesional */
+* {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: var(--color-bg);
-  color: var(--color-texto);
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-/* Navbar */
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  line-height: 1.6;
+}
+
+/* 1. NAVBAR (Navegación) */
 .navbar {
   position: fixed;
   top: 0;
   width: 100%;
-  background: var(--color-principal);
-  color: white;
+  background: rgba(15, 23, 42, 0.8);
+  backdrop-filter: blur(12px); /* Efecto de cristal esmerilado */
   display: flex;
   justify-content: space-between;
-  padding: 1em;
+  align-items: center;
+  padding: 1.2rem 10%;
   z-index: 1000;
+  border-bottom: 1px solid var(--border);
+}
+
+.navbar h1 {
+  font-size: 1.4rem;
+  letter-spacing: -1px;
 }
 
 .navbar ul {
-  list-style: none;
   display: flex;
-  gap: 1em;
+  list-style: none;
+  gap: 2rem;
 }
 
 .navbar a {
-  color: white;
+  color: var(--text-muted);
   text-decoration: none;
-  transition: color 0.3s;
+  font-weight: 500;
+  transition: var(--transition);
 }
 
 .navbar a:hover {
-  color: #ddd;
+  color: var(--primary);
 }
 
-/* Hero con parallax */
+/* 2. HERO SECTION (Parallax Optimizado) */
 .hero {
   height: 100vh;
-  background: url('fondo.jpg') no-repeat center center fixed;
+  /* El degrade asegura que el texto sea legible sobre la imagen */
+  background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.9)), 
+              url('fondo.jpg') no-repeat center center fixed;
   background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  color: white;
+  padding: 0 10%;
 }
 
 .hero-content {
-  animation: fadeInUp 1.5s ease;
+  text-align: center;
+  animation: fadeInUp 1s ease-out;
+}
+
+.hero h2 {
+  font-size: 4rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  letter-spacing: -2px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  max-width: 600px;
+  margin: 0 auto 2rem;
 }
 
 .boton {
   display: inline-block;
-  margin-top: 20px;
-  padding: 0.8em 1.2em;
-  background: white;
-  color: var(--color-principal);
+  padding: 1rem 2rem;
+  background: var(--primary);
+  color: white;
   border-radius: var(--radio);
   text-decoration: none;
-  transition: transform 0.3s;
+  font-weight: 600;
+  transition: var(--transition);
+  box-shadow: 0 10px 15px -3px rgba(99, 102, 241, 0.3);
 }
 
 .boton:hover {
-  transform: scale(1.1) rotate(2deg);
+  background: var(--primary-hover);
+  transform: translateY(-3px);
+  box-shadow: 0 20px 25px -5px rgba(99, 102, 241, 0.4);
 }
 
-/* Proyectos */
+/* 3. PROYECTOS (Grid como el Dashboard) */
 .proyectos {
-  padding: 4em 2em;
+  padding: 100px 10%;
+}
+
+.proyectos h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
   text-align: center;
 }
 
 .grid-proyectos {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.5em;
-  margin-top: 2em;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
 }
 
 .card {
-  background: white;
+  background: var(--bg-surface);
   border-radius: var(--radio);
-  padding: 1.5em;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  transition: transform 0.5s, box-shadow 0.5s;
+  padding: 2rem;
+  border: 1px solid var(--border);
+  transition: var(--transition);
+  cursor: default;
 }
 
 .card:hover {
-  transform: translateY(-10px) rotateY(10deg);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  transform: translateY(-10px);
+  border-color: var(--primary);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
 }
 
-/* Contacto */
+.card h3 {
+  margin-bottom: 1rem;
+  color: var(--primary);
+}
+
+.card p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+/* 4. CONTACTO (Formulario estilo App) */
 .contacto {
-  padding: 3em 2em;
-  background: #eee;
+  padding: 100px 10%;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.contacto h2 {
+  text-align: center;
+  margin-bottom: 3rem;
 }
 
 form {
-  max-width: 400px;
-  margin: auto;
+  max-width: 500px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
+  gap: 1.5rem;
 }
 
 form label {
-  margin-top: 10px;
-  text-align: left;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin-bottom: -1rem;
 }
 
-form input, form textarea, form button {
-  margin-top: 5px;
-  padding: 0.8em;
+form input, form textarea {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  padding: 1rem;
+  border-radius: var(--radio);
+  color: white;
   font-size: 1rem;
+  outline: none;
+  transition: var(--transition);
+}
+
+form input:focus, form textarea:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
 }
 
 form button {
-  margin-top: 15px;
-  background: var(--color-principal);
+  background: var(--primary);
   color: white;
   border: none;
+  padding: 1rem;
   border-radius: var(--radio);
+  font-weight: 700;
   cursor: pointer;
-  transition: background 0.3s, transform 0.3s;
+  transition: var(--transition);
 }
 
 form button:hover {
-  background: var(--color-secundario);
-  transform: scale(1.05);
+  background: var(--primary-hover);
+  transform: scale(1.02);
 }
 
-/* Footer */
+/* 5. FOOTER */
 footer {
-  background: #ddd;
   text-align: center;
-  padding: 1em;
-  margin-top: 20px;
+  padding: 4rem 10%;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  border-top: 1px solid var(--border);
 }
 
 /* Animaciones */
 @keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(30px); }
+  from { opacity: 0; transform: translateY(40px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* Responsive avanzado */
-@media (max-width: 600px) {
-  .navbar {
-    flex-direction: column;
-    align-items: center;
-  }
-  .grid-proyectos {
-    grid-template-columns: 1fr;
-  }
+/* Responsive */
+@media (max-width: 768px) {
+  .hero h2 { font-size: 2.5rem; }
+  .navbar ul { display: none; } /* Podrías agregar un menú hamburguesa luego */
+  .grid-proyectos { grid-template-columns: 1fr; }
 }
